@@ -19,7 +19,7 @@ const Clear = async function* ({
 
     for (const child of children) {
         const { props } = child;
-        yield* new child.type({...props,
+        yield* child.type({...props,
             folder_context,
             template_context
         });
