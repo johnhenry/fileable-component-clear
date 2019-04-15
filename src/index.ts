@@ -1,4 +1,3 @@
-import { createComponent } from 'fileable-components';
 const Clear = async function* ({
     folder_context = '',
     template_context = '',
@@ -25,4 +24,5 @@ const Clear = async function* ({
         });
     }
 };
-export default createComponent(Clear);
+Clear['FILEABLE COMPONENT'] = true;
+export default Clear;

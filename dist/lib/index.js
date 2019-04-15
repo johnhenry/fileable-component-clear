@@ -1,7 +1,5 @@
 'use strict';
 
-var fileableComponents = require('fileable-components');
-
 const Clear = async function* ({
     folder_context = '',
     template_context = '',
@@ -28,6 +26,6 @@ const Clear = async function* ({
         });
     }
 };
-var index = fileableComponents.createComponent(Clear);
+Clear['FILEABLE COMPONENT'] = true;
 
-module.exports = index;
+module.exports = Clear;

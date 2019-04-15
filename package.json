@@ -31,7 +31,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "fileable-components": "0.0.5",
     "glob": "7.1.3",
     "rollup": "1.7.4"
   },
