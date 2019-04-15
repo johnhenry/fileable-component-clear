@@ -2,7 +2,7 @@
 
 # Fileable Component: Clear
 
-[fileable](https://github.com/isaacs/fileable) template component used to delete files and folders
+[Fileable](https://github.com/isaacs/fileable) template component used to delete files and folders
 
 Wrapping components within a Clear component removes __all files__ from a given folder context before writing.
 
