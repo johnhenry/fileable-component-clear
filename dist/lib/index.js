@@ -1,5 +1,9 @@
 'use strict';
 
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var iterator = _interopDefault(require('fileable-iterator'));
+
 const Clear = async function* ({
     folder_context = '',
     template_context = '',
@@ -19,8 +23,7 @@ const Clear = async function* ({
     };
 
     for (const child of children) {
-        const { props } = child;
-        yield* child.type({...props,
+        yield* iterator(child, {
             folder_context,
             template_context
         });

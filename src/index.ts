@@ -1,3 +1,4 @@
+import iterator from 'fileable-iterator';
 const Clear = async function* ({
     folder_context = '',
     template_context = '',
@@ -17,8 +18,7 @@ const Clear = async function* ({
     };
 
     for (const child of children) {
-        const { props } = child;
-        yield* child.type({...props,
+        yield* iterator(child, {
             folder_context,
             template_context
         });
